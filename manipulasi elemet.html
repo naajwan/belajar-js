@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">hello PPLG</h1>
+    <P class="descrption">Ini adalah contoh kode progam dari document objek</P>
+    <button id="changecontent">ubah textContent</button>
+    <script>
+        //menggakses element menggunakan document objek
+        const header = document.getElementById("header");
+        const paragraph = document.querySelector(".description");
+        const button = document.getElementById("changecontent");
+
+        //memanipulasi konten element
+        button.addEventListener("click", () => {
+            header.textContent = "hello, document objek";
+            paragraph.textContent ="content telah di ubah oleh document objek";
+        });
+    </script>
+</body>
+</html>

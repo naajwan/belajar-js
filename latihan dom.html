@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EXAMPLE</title>
+</head>
+<body>
+    <h1 id="tittle">ini dom</h1>
+    <button id="different">change</button>
+    <script>
+           const titleelement = document.getElementById("tittle");
+           const button = document.getElementById("different");
+
+           button.addEventListener("click",() =>{
+                 titleelement.textContent = "Hello";
+           }
+           );
+
+
+    </script>
+</body>
+</html>
