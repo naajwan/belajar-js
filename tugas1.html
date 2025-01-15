@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>paragraf pertama</p>
+    </div>
+    <button id="addnode">add node</button>
+    <button id="removenode">remove node</button>
+    <script>
+        const container = document.getElementById("container");
+        const addnodebutton =document.getElementById("addnode");
+        const removenodebutton = document.getElementById("removenode");
+
+        addnodebutton.addEventListener("click", () =>{
+            const newparagraph = document.createElement("p");
+            newparagraph.textContent = "paragraf baru";
+            container.appendChild(newparagraph);
+        }
+    );
+
+        removenodebutton.addEventListener("click", () =>{
+            if(container.lastChild){
+                container.removeChild(container.lastChild);
+            }
+        }
+    );
+    </script>
+</body>
+</html>
